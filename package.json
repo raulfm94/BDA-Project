@@ -1,0 +1,23 @@
+{
+  "name": "bda-proyect",
+  "version": "1.0.0",
+  "description": "Proyecto de Bases de Datos Avanzadas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulfm94/BDA-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raulfm94/BDA-Project/issues"
+  },
+  "homepage": "https://github.com/raulfm94/BDA-Project#readme",
+  "dependencies": {
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.5"
+  }
+}
