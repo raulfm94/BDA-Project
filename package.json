@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/raulfm94/BDA-Project#readme",
   "dependencies": {
+    "geo-lib": "^0.3.1",
     "mongodb": "^2.2.26",
     "mongoose": "^4.9.5"
   }
