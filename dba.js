@@ -1,1 +1,3 @@
-var mongoose = require();
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/airport');
