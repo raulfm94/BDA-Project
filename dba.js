@@ -33,7 +33,6 @@ if(recreatedb){
   console.log("Airports saved!");
 
   //load routes to the DB
-  var fs = require('fs');
   var array = fs.readFileSync('routes.txt').toString().split("\n");
   for(i in array) {
     var dataarray = array[i].split(',');
