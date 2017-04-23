@@ -1,7 +1,7 @@
 const mongoose  = require('mongoose');
 const Schema   = mongoose.Schema;
 
-const AirportsSchema = new Schema({
+const AirportSchema = new Schema({
     id          :{
     	type: Number,
       unique: true
@@ -23,4 +23,4 @@ const AirportsSchema = new Schema({
     }
 });
 
-module.exports =  mongoose.model('airports', AirportsSchema);
+module.exports =  mongoose.model('airport', AirportSchema);

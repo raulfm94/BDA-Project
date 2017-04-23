@@ -1,7 +1,7 @@
 const mongoose  = require('mongoose');
-const Schema   = mongoose.Schema;
+const Schema    = mongoose.Schema;
 
-const RoutesSchema = new Schema({
+const RouteSchema = new Schema({
     airlineId             :{
       type: Number
     },
@@ -16,4 +16,4 @@ const RoutesSchema = new Schema({
     }
 });
 
-module.exports =  mongoose.model('routes',RoutesSchema);
+module.exports =  mongoose.model('route',RouteSchema);
