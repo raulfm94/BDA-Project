@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/raulfm94/BDA-Project#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "directed-graph": "^1.0.2",
+    "express": "^4.15.2",
     "geo-lib": "^0.3.1",
     "mongodb": "^2.2.26",
     "mongoose": "^4.9.5"
