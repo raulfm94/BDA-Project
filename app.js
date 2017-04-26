@@ -2,18 +2,19 @@ const express     = require('express');
 const app         = express();
 const bodyParser  = require('body-parser');
 const mongoose    = require('mongoose');
+const async       = require('async');
+const graph       = require('directed-graph');
 const airport     = require('./models/airport.js');
 const route       = require('./models/route.js');
 const recreatedb  = false;
-const graph       = require('directed-graph');
 const port        = 8080;
 
 app.listen(port,function(){
   console.log('app ready');
 });
 
-mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/airport');
+mongoose.Promise = require('bluebird');
 
 //Creating db from 0
 if(recreatedb){
@@ -91,21 +92,20 @@ if(recreatedb){
 //   });
 // }
 
-function getAirportId(name){
-  var promise = airport.find({city: {$regex : name, $options:"i"}})
+var getAirportId = function (name, cb){
+  var promise = airport.find({city: {$regex : name, $options:"i"}});
 
-  promise.then(function(airport){
-    console.log(airport);
-    return airport.save();
-  })
-  .then(function(airport){
-    console.log(airport);
-  },
-  function(err){
-    console.log(err);
+  promise.exec(function (err, airport){
+    if(err){
+      console.log(err);
+    }
+    else{
+      console.log(airport);
+      cb(null, airport[0].id);
+    }
   });
-  console.log(promise);
 }
+
 
 
 function getAirportRoutes(airport){
@@ -124,19 +124,68 @@ function appendRoutesToAirport(aiport, routes){
   airport.push()
 }
 
-function getRoutes(sourceAirportName, destinationAirportName){
+function getRoutes(sourceAirportName,destinationAirportName){
+
   var graphA = new graph();
 
-  var sourceAirportId;
-  getAirportId(sourceAirportName,function(err, airport){
-    sourceAirportId = airport;
-    console.log("aereopuerto: " + airport);
+  var sourceAiportId = getAirportId(sourceAirportName,function(err, airportid){
+    console.log(airportid);
+    getAirportId(sourceAirportName,function(err, airportid){
+      console.log(airportid);
+    })
+    graphA.addVertex(airportid);
+    console.log(graphA);
   });
 
-  graphA.addVertex(sourceAirportId);
 
-  var destinationAirportId  = getAirportId(destinationAirportName);
+  // var sourceAiportId = getAirportId(sourceAirportName);
 
+
+
+  // async.parallel([
+  //     function(callback) {
+  //       airport.find({city: {$regex : name, $options:"i"}},function(err,result){
+  //         console.log(result)
+  //         if(result){
+  //           return result;
+  //         }
+  //         else{
+  //           return false;
+  //         }
+  //       }
+  //     }
+  // ],
+  // // optional callback
+  // function(err, results) {
+  //     console.log(results);
+  // });
+
+
+  // airport.find({city: {$regex : sourceAirportName, $options:"i"}},function(err,result){
+  //   // console.log(result)
+  //   if(result){
+  //     graphA.addVertex(result['0'].id);
+  //     airport.find({city: {$regex : destinationAirportName, $options:"i"}},function(err,result2){
+  //         if(result2){
+  //           // return result2;
+  //           graphA.addVertex(result2['0'].id);
+  //           console.log(graphA);
+  //         }
+  //         else{
+  //           return false;
+  //         }
+  //       })
+  //   }
+  //   else{
+  //     return false;
+  //   }
+  // })
+
+  console.log(graphA);
+
+  //
+  // var destinationAirportId  = getAirportId(destinationAirportName);
+  // console.log(sourceAirportId)
   // graphA.addVertex(destinationAirportId);
   //
   // var sourceAirportRoutes   = getAirportRoutes(sourceAirportId);
