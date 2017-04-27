@@ -2,19 +2,27 @@ const express     = require('express');
 const app         = express();
 const bodyParser  = require('body-parser');
 const mongoose    = require('mongoose');
-const async       = require('async');
-const graph       = require('directed-graph');
+const path        = require('path');
+const exphbs      = require('express-handlebars');
+const dGraph      = require('node-dijkstra');
+const _           = require('lodash');
 const airport     = require('./models/airport.js');
 const route       = require('./models/route.js');
 const recreatedb  = false;
 const port        = 8080;
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true})); //To extended char(UNICODE)
 
 app.listen(port,function(){
   console.log('app ready');
 });
 
 mongoose.connect('mongodb://localhost/airport');
-mongoose.Promise = require('bluebird');
+mongoose.Promise = require('q').Promise;
 
 //Creating db from 0
 if(recreatedb){
@@ -71,140 +79,155 @@ if(recreatedb){
   console.log("Routes saved!");
 }
 
-
-// function getAirportId(name,callback){
-//   airport.find({city: {$regex : name, $options:"i"}},function(err, result){
-//     if(err){
-//       console.log(err);
-//       return;
-//     }
-//     else if(airport.length <= 1){
-//       console.log(result);
-//       console.log(result[0].id);
-//       callback(null, result);
-//     }
-//     else{
-//       for(airportid in result){
-//         console.log(result[airportid]);
-//       }
-//       return result[0].id;
-//     }
-//   });
-// }
-
-var getAirportId = function (name, cb){
-  var promise = airport.find({city: {$regex : name, $options:"i"}});
-
-  promise.exec(function (err, airport){
-    if(err){
-      console.log(err);
-    }
-    else{
-      console.log(airport);
-      cb(null, airport[0].id);
-    }
-  });
+function getAirportId(name){
+  return airport.find({city: {$regex : name, $options:"i"}});
 }
-
-
 
 function getAirportRoutes(airport){
-  route.find({sourceAirportId: airport})
-    .exec(function(err, routes){
-    if(err){
-      console.log(err);
-      return;
+  return route.find({sourceAirportId: airport});
+}
+
+app.get('/',function(req, res){
+  res.render('graph');
+});
+
+app.get('/getAllAirports',function (req,res){
+  airport.find({}).select('id').select('airportName').limit(100)
+  .then(function (airports){
+    if(airports){
+      airports.forEach(function(aiport, index, array){
+        route.find({sourceAirportId:aiport.id}).select('sourceAirportId').select('destinationAirportId')
+        .then(function (routes){
+          if(routes){
+            routes.forEach(function(destinationRoutes, index, array){
+              route.find({sourceAirportId:destinationRoutes.destinationAirportId}).select('sourceAirportId').select('destinationAirportId')
+              .then(function (resDestinationRoutes){
+                if(resDestinationRoutes){
+                  res.json({"airports": airports,"routes":routes.concat(resDestinationRoutes)});
+                }else{
+                  console.log("No routes found")
+                  res.json({"success":false,"error":"No routes found"})
+                }
+              },function(error){
+                console.log(error)
+              })
+              .catch(function (err){
+                console.log(err);
+              })
+            });
+          }else{
+            console.log("No routes found")
+            res.json({"success":false,"error":"No routes found"})
+          }
+        },function(error){
+          console.log(error)
+        })
+        .catch(function (err){
+          console.log(err);
+        })
+      });
+    }else{
+      console.log("No airports found")
+      res.json({"success":false,"error":"No airports found"})
     }
-    console.log(routes);
-    return routes;
-  });
-}
+  },function(error){
+    console.log(error)
+  })
+});
 
-function appendRoutesToAirport(aiport, routes){
-  airport.push()
-}
 
-function getRoutes(sourceAirportName,destinationAirportName){
+app.post('/getRoutes',function(req, res){
+  var sourceAirportName = req.body.sourceAirport;
+  var destinationAirportName = req.body.destinationAirport;
 
-  var graphA = new graph();
+  const dGraphA = new dGraph();
+  getAirportId(sourceAirportName)
+  .then(function(resSourceAirport){
+    var sourceAiportId = resSourceAirport[0].id;
+    // graphA.addVertex(sourceAiportId);
 
-  var sourceAiportId = getAirportId(sourceAirportName,function(err, airportid){
-    console.log(airportid);
-    getAirportId(sourceAirportName,function(err, airportid){
-      console.log(airportid);
+    getAirportId(destinationAirportName)
+    .then(function(resDestinnationAirport){
+      var destinationAirportId = resDestinnationAirport[0].id;
+      // graphA.addVertex(destinationAirportId);
+
+      //Get routes origin
+      getAirportRoutes(sourceAiportId)
+      .then(function(resSourceAirportRoutes){
+        var routesAirportSource = {};
+        var queue = [];
+        var visited = [];
+        resSourceAirportRoutes.forEach(function(routeSource){
+          routesAirportSource[routeSource.destinationAirportId] = 1;
+          //add routes to queue
+          queue.push(routeSource.destinationAirportId);
+          dGraphA.addNode(sourceAiportId, routesAirportSource);
+        });
+        // console.log(queue)
+        //Addd routes to graph
+        // console.log(route.path(sourceAiportId, destinationAirportId));
+        //While the queue is empty
+        var i , j;
+        queue.forEach(function(airportToDequeue){
+          // console.log("i del foreach " + j)
+          // console.log("aerepuerto popeado" + i + " lenght: " + queue.length);
+          // console.log("queue: " + queue);
+          // console.log("aereopuerto fuera: " + i);
+          getAirportRoutes(airportToDequeue)
+          .then(function(resSourceAirportRoutes){
+            queue.shift(airportToDequeue);
+            visited.push(airportToDequeue);
+            console.log("After shift and push " + queue.length)
+            console.log(visited)
+            routesAirportSource = {};
+            // console.log("i: "+ i);
+            // console.log(resSourceAirportRoutes);
+            var bool = false;
+            resSourceAirportRoutes.forEach(function(routeSource){
+              // console.log(routeSource)
+              // var airportIdSource = routeSource.sourceAirportId;
+              routesAirportSource[routeSource.destinationAirportId] = 1;
+              queue.forEach(function(airportidqueue){
+                //if airport already on queue
+                if(routeSource.destinationAirportId != airportidqueue){
+                  bool = true;
+                  // queue.push(routeSource.destinationAirportId);
+                }
+              })
+              //airport already visited
+              visited.forEach(function(airportvisited){
+                if(routeSource.destinationAirportId == airportvisited){
+                  bool = true;
+                  // queue.push(routeSource.destinationAirportId);
+                }
+              })
+              if(!bool)
+              queue.push(routeSource.destinationAirportId);
+            });
+            // console.log(queue)
+            // console.log("i: "+ i);
+            dGraphA.addNode(airportToDequeue, routesAirportSource);
+            console.log(dGraphA)
+            console.log(queue.length);
+            // res.json({success:true,message:"review console",queue:queue.length})
+            var array = route.path('1804', '1805');
+            console.log(array);
+            // res.json(route.path(sourceAiportId, destinationAirportId));
+          },
+          function(err){
+            console.log(err)
+          })
+        })
+      },
+      function(err){
+        console.log(err)
+      })
+    },
+    function(err){
+      console.log(err)
     })
-    graphA.addVertex(airportid);
-    console.log(graphA);
-  });
-
-
-  // var sourceAiportId = getAirportId(sourceAirportName);
-
-
-
-  // async.parallel([
-  //     function(callback) {
-  //       airport.find({city: {$regex : name, $options:"i"}},function(err,result){
-  //         console.log(result)
-  //         if(result){
-  //           return result;
-  //         }
-  //         else{
-  //           return false;
-  //         }
-  //       }
-  //     }
-  // ],
-  // // optional callback
-  // function(err, results) {
-  //     console.log(results);
-  // });
-
-
-  // airport.find({city: {$regex : sourceAirportName, $options:"i"}},function(err,result){
-  //   // console.log(result)
-  //   if(result){
-  //     graphA.addVertex(result['0'].id);
-  //     airport.find({city: {$regex : destinationAirportName, $options:"i"}},function(err,result2){
-  //         if(result2){
-  //           // return result2;
-  //           graphA.addVertex(result2['0'].id);
-  //           console.log(graphA);
-  //         }
-  //         else{
-  //           return false;
-  //         }
-  //       })
-  //   }
-  //   else{
-  //     return false;
-  //   }
-  // })
-
-  console.log(graphA);
-
-  //
-  // var destinationAirportId  = getAirportId(destinationAirportName);
-  // console.log(sourceAirportId)
-  // graphA.addVertex(destinationAirportId);
-  //
-  // var sourceAirportRoutes   = getAirportRoutes(sourceAirportId);
-  //
-  // console.log("destinationAirportId" + destinationAirportId);
-  //
-  // for(route in sourceAirportRoutes){
-  //   graphA.addVertex(route.destinationAirportId);
-  //   graphA.addEdge(route.sourceAirportId);
-  //   // if(destinationAirportId == route.destinationAirportId){
-  //   //   console.log("Route finded!");
-  //   // }
-  //   // else{
-  //   //   routes = getAirportRoutes(sourceAirportId);
-  //   // }
-  //
-  // }
-
-}
-
-getRoutes('guadalajara','mexico city');
-// getAirportRoutes(1804);
+  },
+  function(err){
+    console.log(err)
+  })
+});

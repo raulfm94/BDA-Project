@@ -1,0 +1,70 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 80wh;
+            height: 100vh;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+  <header>
+
+  </header>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Ciudad origen</label>
+          <select id="sourceCity">
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label>Ciudad destino</label>
+          <select id="destinyCity">
+          </select>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-default">Enviar</button>
+        </div>
+      </div>
+      <div id="mynetwork"></div>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $.get("/getAllAirports", function( data ) {
+    airportNodes = [];
+    data.airports.forEach(function(airport, index, array){
+      airportNodes.push({'id': airport.id,'label': airport.airportName});
+    })
+    var nodes = new vis.DataSet(
+      airportNodes
+    );
+
+    routeNodes = [];
+    data.routes.forEach(function(route, index, array){
+      routeNodes.push({'from': route.sourceAirportId,'to': route.destinationAirportId});
+    })
+    var edges = new vis.DataSet(
+      routeNodes
+    );
+
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var options = {};
+
+    // initialize your network!
+    var network = new vis.Network(container, data, options);
+  });
+</script>
+</body>

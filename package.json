@@ -17,12 +17,16 @@
   },
   "homepage": "https://github.com/raulfm94/BDA-Project#readme",
   "dependencies": {
-    "async": "^2.3.0",
     "body-parser": "^1.17.1",
     "directed-graph": "^1.0.2",
     "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
     "geo-lib": "^0.3.1",
+    "lodash": "^4.17.4",
     "mongodb": "^2.2.26",
-    "mongoose": "^4.9.5"
+    "mongoose": "^4.9.5",
+    "node-dijkstra": "^2.4.1",
+    "path": "^0.12.7",
+    "q": "^1.5.0"
   }
 }
