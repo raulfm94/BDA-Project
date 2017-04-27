@@ -1,0 +1,1385 @@
+app ready
+Patata: 1824
+Patata: 1825
+Patata: 3621
+Patata: 1840
+Patata: 3867
+Patata: 1847
+Patata: 3670
+Patata: 3484
+Patata: 3462
+Patata: 3748
+Patata: 3682
+Patata: 3682
+Patata: 1794
+Patata: 1792
+Patata: 1797
+Patata: 3687
+Patata: 1807
+Patata: 1816
+Patata: 3484
+Patata: 1824
+Patata: 1825
+Patata: 1826
+Patata: 3734
+Patata: 3830
+Patata: 1871
+Patata: 1836
+Patata: 3469
+Patata: 3748
+Patata: 3817
+Patata: 1847
+Patata: 1850
+Patata: 1845
+Patata: 3484
+Patata: 3748
+Patata: 3682
+Patata: 1871
+Patata: 3682
+Patata: 3687
+Patata: 3484
+Patata: 1825
+Patata: 3734
+Patata: 3830
+Patata: 3536
+Patata: 3817
+Patata: 3682
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }
+Graph {
+  graph: 
+   Map {
+     '1804' => Map { 'patata' => 2 },
+     1824 => Map { 'routesAirportSource' => 1 },
+     3670 => Map { 'routesAirportSource' => 1 },
+     3682 => Map { 'routesAirportSource' => 1 },
+     1807 => Map { 'routesAirportSource' => 1 },
+     1825 => Map { 'routesAirportSource' => 1 },
+     3484 => Map { 'routesAirportSource' => 1 },
+     3621 => Map { 'routesAirportSource' => 1 },
+     3462 => Map { 'routesAirportSource' => 1 },
+     3867 => Map { 'routesAirportSource' => 1 },
+     1847 => Map { 'routesAirportSource' => 1 },
+     1840 => Map { 'routesAirportSource' => 1 },
+     3748 => Map { 'routesAirportSource' => 1 },
+     1797 => Map { 'routesAirportSource' => 1 },
+     1826 => Map { 'routesAirportSource' => 1 },
+     3469 => Map { 'routesAirportSource' => 1 },
+     1845 => Map { 'routesAirportSource' => 1 },
+     3830 => Map { 'routesAirportSource' => 1 },
+     1794 => Map { 'routesAirportSource' => 1 },
+     1816 => Map { 'routesAirportSource' => 1 },
+     3734 => Map { 'routesAirportSource' => 1 },
+     3687 => Map { 'routesAirportSource' => 1 },
+     3536 => Map { 'routesAirportSource' => 1 },
+     1792 => Map { 'routesAirportSource' => 1 },
+     3817 => Map { 'routesAirportSource' => 1 },
+     1836 => Map { 'routesAirportSource' => 1 },
+     1850 => Map { 'routesAirportSource' => 1 },
+     1871 => Map { 'routesAirportSource' => 1 } } }
+Path: null
+Graph {
+  graph: 
+   Map {
+     'A' => Map { 'B' => 1 },
+     'B' => Map { 'A' => 1, 'C' => 2, 'D' => 4 },
+     'C' => Map { 'B' => 2, 'D' => 1 },
+     'D' => Map { 'C' => 1, 'B' => 4 } } }

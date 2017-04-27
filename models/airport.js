@@ -15,6 +15,9 @@ const AirportSchema = new Schema({
     country     :{
       type: String
     },
+    code        :{
+      type: String
+    },
     lat         :{
       type: Number
     },

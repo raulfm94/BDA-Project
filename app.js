@@ -33,7 +33,7 @@ if(recreatedb){
   for(i in array) {
     var dataarray = array[i].split(',');
 
-    if(dataarray[0] != null && dataarray[0] != '' && dataarray[1] != '' && dataarray[2] != '' && dataarray[3] != '' && dataarray[4] != '' && dataarray[5] != ''){
+    if(dataarray[0] != null && dataarray[0] != '' && dataarray[1] != '' && dataarray[2] != '' && dataarray[3] != '' && dataarray[4] != '' && dataarray[5] != '' && dataarray[6] != ''){
       var object = new airport({
         id          : parseInt(dataarray[0]),
         airportName : dataarray[1],
@@ -65,8 +65,7 @@ if(recreatedb){
       var object = new route({
         airlineId             : parseInt(dataarray[0]),
         sourceAirportId       : parseInt(dataarray[1]),
-        destinationAirportId  : parseInt(dataarray[2]),
-        stops                 : parseInt(dataarray[3])
+        destinationAirportId  : parseInt(dataarray[2])
       });
       object.save(function(err){
         if(err){
@@ -140,15 +139,17 @@ app.post('/getRoutes',function(req, res){
   var sourceAirportName = req.body.sourceAirport;
   var destinationAirportName = req.body.destinationAirport;
 
-  const dGraphA = new dGraph();
+  var dGraphA = new dGraph();
   getAirportId(sourceAirportName)
   .then(function(resSourceAirport){
     var sourceAiportId = resSourceAirport[0].id;
+    console.log(resSourceAirport);
     // graphA.addVertex(sourceAiportId);
 
     getAirportId(destinationAirportName)
     .then(function(resDestinnationAirport){
       var destinationAirportId = resDestinnationAirport[0].id;
+      console.log(resSourceAirport);
       // graphA.addVertex(destinationAirportId);
 
       //Get routes origin
@@ -158,11 +159,14 @@ app.post('/getRoutes',function(req, res){
         var queue = [];
         var visited = [];
         resSourceAirportRoutes.forEach(function(routeSource){
-          routesAirportSource[routeSource.destinationAirportId] = 1;
+          routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
           //add routes to queue
+          // dGraphA.addNode(sourceAiportId.toString(), {[routeSource.destinationAirportId]:1});
           queue.push(routeSource.destinationAirportId);
-          dGraphA.addNode(sourceAiportId, routesAirportSource);
         });
+        dGraphA.addNode(sourceAiportId.toString(),routesAirportSource);
+        // queue.foreach(function(destiny){
+        // })
         // console.log(queue)
         //Addd routes to graph
         // console.log(route.path(sourceAiportId, destinationAirportId));
@@ -177,8 +181,8 @@ app.post('/getRoutes',function(req, res){
           .then(function(resSourceAirportRoutes){
             queue.shift(airportToDequeue);
             visited.push(airportToDequeue);
-            console.log("After shift and push " + queue.length)
-            console.log(visited)
+            // console.log("After shift and push " + queue.length)
+            // console.log(visited)
             routesAirportSource = {};
             // console.log("i: "+ i);
             // console.log(resSourceAirportRoutes);
@@ -186,7 +190,7 @@ app.post('/getRoutes',function(req, res){
             resSourceAirportRoutes.forEach(function(routeSource){
               // console.log(routeSource)
               // var airportIdSource = routeSource.sourceAirportId;
-              routesAirportSource[routeSource.destinationAirportId] = 1;
+              routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
               queue.forEach(function(airportidqueue){
                 //if airport already on queue
                 if(routeSource.destinationAirportId != airportidqueue){
@@ -206,12 +210,11 @@ app.post('/getRoutes',function(req, res){
             });
             // console.log(queue)
             // console.log("i: "+ i);
-            dGraphA.addNode(airportToDequeue, routesAirportSource);
+            dGraphA.addNode(airportToDequeue.toString(), routesAirportSource);
             console.log(dGraphA)
-            console.log(queue.length);
+            // console.log(queue.length);
             // res.json({success:true,message:"review console",queue:queue.length})
-            var array = route.path('1804', '1805');
-            console.log(array);
+            console.log("Path: " + dGraphA.path(sourceAiportId.toString(), destinationAirportId.toString()));
             // res.json(route.path(sourceAiportId, destinationAirportId));
           },
           function(err){
