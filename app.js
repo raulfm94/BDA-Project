@@ -82,6 +82,10 @@ function getAirportId(name){
   return airport.find({city: {$regex : name, $options:"i"}});
 }
 
+function getAirportName(id){
+  return airport.find({id: id}).select('airportName');
+}
+
 function getAirportRoutes(airport){
   return route.find({sourceAirportId: airport});
 }
@@ -135,102 +139,183 @@ app.get('/getAllAirports',function (req,res){
 });
 
 
+// app.post('/getRoutes',function(req, res){
+//   var sourceAirportName = req.body.sourceAirport;
+//   var destinationAirportName = req.body.destinationAirport;
+//
+//   var dGraphA = new dGraph();
+//   getAirportId(sourceAirportName)
+//   .then(function(resSourceAirport){
+//     var sourceAiportId = resSourceAirport[0].id;
+//     // graphA.addVertex(sourceAiportId);
+//
+//     getAirportId(destinationAirportName)
+//     .then(function(resDestinnationAirport){
+//       var destinationAirportId = resDestinnationAirport[0].id;
+//       // graphA.addVertex(destinationAirportId);
+//
+//       //Get routes origin
+//       getAirportRoutes(sourceAiportId)
+//       .then(function(resSourceAirportRoutes){
+//         var routesAirportSource = {};
+//         var queue = [];
+//         var visited = [];
+//         resSourceAirportRoutes.forEach(function(routeSource){
+//           routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
+//           //add routes to queue
+//           // dGraphA.addNode(sourceAiportId.toString(), {[routeSource.destinationAirportId]:1});
+//           queue.push(routeSource.destinationAirportId);
+//         });
+//         dGraphA.addNode(sourceAiportId.toString(),routesAirportSource);
+//         //While the queue is empty
+//         var i , j;
+//         queue.forEach(function(airportToDequeue){
+//           resRoutes = [];
+//           getAirportRoutes(airportToDequeue)
+//           .then(function(resSourceAirportRoutes){
+//             queue.shift(airportToDequeue);
+//             visited.push(airportToDequeue);
+//             routesAirportSource = {};
+//             var bool = false;
+//             resSourceAirportRoutes.forEach(function(routeSource){
+//               routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
+//               queue.forEach(function(airportidqueue){
+//                 //if airport already on queue
+//                 if(routeSource.destinationAirportId != airportidqueue){
+//                   bool = true;
+//                 }
+//               })
+//               //airport already visited
+//               visited.forEach(function(airportvisited){
+//                 if(routeSource.destinationAirportId == airportvisited){
+//                   bool = true;
+//                 }
+//               })
+//               if(!bool)
+//               queue.push(routeSource.destinationAirportId);
+//             });
+//             dGraphA.addNode(airportToDequeue.toString(), routesAirportSource);
+//             var route = dGraphA.path(sourceAiportId.toString(), destinationAirportId.toString());
+//             var routeString = [];
+//             if(route){
+//               route.forEach(function(resultRoutes){
+//                 getAirportName(resultRoutes)
+//                 .then(function(resultAirports){
+//                   routeString.push(resultAiports[0].airportName);
+//                 })
+//               })
+//               console.log("Path: " + route);
+//             }
+//             res.json(route.path(sourceAiportId, destinationAirportId));
+//           },
+//           function(err){
+//             console.log(err)
+//           })
+//         })
+//       },
+//       function(err){
+//         console.log(err)
+//       })
+//     },
+//     function(err){
+//       console.log(err)
+//     })
+//   },
+//   function(err){
+//     console.log(err)
+//   })
+// });
+
 app.post('/getRoutes',function(req, res){
   var sourceAirportName = req.body.sourceAirport;
   var destinationAirportName = req.body.destinationAirport;
 
+  var sourceAiportId;
+  var destinationAirportId;
+  var dourceAirportRoutes;
   var dGraphA = new dGraph();
   getAirportId(sourceAirportName)
   .then(function(resSourceAirport){
-    var sourceAiportId = resSourceAirport[0].id;
-    console.log(resSourceAirport);
-    // graphA.addVertex(sourceAiportId);
-
-    getAirportId(destinationAirportName)
-    .then(function(resDestinnationAirport){
-      var destinationAirportId = resDestinnationAirport[0].id;
-      console.log(resSourceAirport);
-      // graphA.addVertex(destinationAirportId);
-
-      //Get routes origin
-      getAirportRoutes(sourceAiportId)
+    sourceAiportId = resSourceAirport[0].id;
+    return getAirportId(destinationAirportName)
+  })
+  .then(function (resDestinnationAirport){
+    destinationAirportId = resDestinnationAirport[0].id;
+    return getAirportRoutes(sourceAiportId)
+  })
+  .then(function(resSourceAirportRoutes){
+    sourceAirportRoutes = resSourceAirportRoutes;
+    var routesAirportSource = {};
+    var queue = [];
+    var visited = [];
+    resSourceAirportRoutes.forEach(function(routeSource){
+      routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
+      //add routes to queue
+      queue.push(routeSource.destinationAirportId);
+    });
+    dGraphA.addNode(sourceAiportId.toString(),routesAirportSource);
+    var routesArray = [];
+    queue.forEach(function(airportToDequeue){
+      getAirportRoutes(airportToDequeue)
       .then(function(resSourceAirportRoutes){
-        var routesAirportSource = {};
-        var queue = [];
-        var visited = [];
+        queue.shift(airportToDequeue);
+        visited.push(airportToDequeue);
+        routesAirportSource = {};
+        var bool = false;
         resSourceAirportRoutes.forEach(function(routeSource){
           routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
-          //add routes to queue
-          // dGraphA.addNode(sourceAiportId.toString(), {[routeSource.destinationAirportId]:1});
-          queue.push(routeSource.destinationAirportId);
-        });
-        dGraphA.addNode(sourceAiportId.toString(),routesAirportSource);
-        // queue.foreach(function(destiny){
-        // })
-        // console.log(queue)
-        //Addd routes to graph
-        // console.log(route.path(sourceAiportId, destinationAirportId));
-        //While the queue is empty
-        var i , j;
-        queue.forEach(function(airportToDequeue){
-          // console.log("i del foreach " + j)
-          // console.log("aerepuerto popeado" + i + " lenght: " + queue.length);
-          // console.log("queue: " + queue);
-          // console.log("aereopuerto fuera: " + i);
-          getAirportRoutes(airportToDequeue)
-          .then(function(resSourceAirportRoutes){
-            queue.shift(airportToDequeue);
-            visited.push(airportToDequeue);
-            // console.log("After shift and push " + queue.length)
-            // console.log(visited)
-            routesAirportSource = {};
-            // console.log("i: "+ i);
-            // console.log(resSourceAirportRoutes);
-            var bool = false;
-            resSourceAirportRoutes.forEach(function(routeSource){
-              // console.log(routeSource)
-              // var airportIdSource = routeSource.sourceAirportId;
-              routesAirportSource[routeSource.destinationAirportId.toString()] = 1;
-              queue.forEach(function(airportidqueue){
-                //if airport already on queue
-                if(routeSource.destinationAirportId != airportidqueue){
-                  bool = true;
-                  // queue.push(routeSource.destinationAirportId);
-                }
-              })
-              //airport already visited
-              visited.forEach(function(airportvisited){
-                if(routeSource.destinationAirportId == airportvisited){
-                  bool = true;
-                  // queue.push(routeSource.destinationAirportId);
-                }
-              })
-              if(!bool)
-              queue.push(routeSource.destinationAirportId);
-            });
-            // console.log(queue)
-            // console.log("i: "+ i);
-            dGraphA.addNode(airportToDequeue.toString(), routesAirportSource);
-            console.log(dGraphA)
-            // console.log(queue.length);
-            // res.json({success:true,message:"review console",queue:queue.length})
-            console.log("Path: " + dGraphA.path(sourceAiportId.toString(), destinationAirportId.toString()));
-            // res.json(route.path(sourceAiportId, destinationAirportId));
-          },
-          function(err){
-            console.log(err)
+          queue.forEach(function(airportidqueue){
+            //if airport already on queue
+            if(routeSource.destinationAirportId != airportidqueue){
+              bool = true;
+            }
           })
-        })
-      },
-      function(err){
-        console.log(err)
+          //airport already visited
+          visited.forEach(function(airportvisited){
+            if(routeSource.destinationAirportId == airportvisited){
+              bool = true;
+            }
+          })
+          if(!bool)
+            queue.push(routeSource.destinationAirportId);
+        });
+        dGraphA.addNode(airportToDequeue.toString(), routesAirportSource);
+        var route = dGraphA.path(sourceAiportId.toString(), destinationAirportId.toString());
+        if(route){
+          if(routesArray.length == 0){
+            routesArray.push(route);
+            console.log(route);
+            console.log('-------------------------');
+          }
+          else{
+            var pushRoute = false;
+            routesArray.forEach(function(routeInArray){
+              // console.log("routeInArray: " + routeInArray + " route: " + route  + " diference: "+  _.difference(routeInArray,route) );
+              if(_.difference(routeInArray,route).length > 0){
+                pushRoute = true;
+              }
+              else{
+                pushRoute = false;
+              }
+            })
+            if(pushRoute){
+              routesArray.push(route);
+              console.log(route);
+              console.log('-------------------------');
+              pushRoute = false;
+            }
+          }
+        }
+        else{
+          console.log("Looking for routes!");
+        }
       })
-    },
-    function(err){
-      console.log(err)
+      .catch(function(err){
+        console.log(err);
+      })
     })
-  },
-  function(err){
-    console.log(err)
+  })
+  .catch(function(err){
+    console.log(err);
   })
 });
